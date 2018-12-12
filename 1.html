@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>1.md</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="javascriptと推しの名前で遊んでみよう" class="level1">
+<h1>JavaScriptと推しの名前で遊んでみよう！</h1>
+<section id="前提" class="level2">
+<h2>前提</h2>
+<ul>
+<li>推しがいる。</li>
+<li>PCにGoogleChromeがインストールされている。</li>
+</ul>
+<section id="遊ぶ環境をつくる" class="level3">
+<h3>遊ぶ環境をつくる</h3>
+<ol type="1">
+<li>Chromeを立ち上げてください。</li>
+<li>開発者ツールを立ち上げます。
+<ul>
+<li>Windowsだと“F12キー”を押す、もしくは画面上で右クリック→“検証”で開きます。</li>
+<li>Macでの開き方は分からないのでぐぐってください。。。</li>
+</ul></li>
+<li>開発者ツールの“Console”タブを選択してください。
+<ul>
+<li>真っ赤な文字がいっぱい表示されてても気にしないでください。私は悪くない。笑</li>
+</ul></li>
+<li>遊ぶ環境の完成です！！</li>
+</ol>
+</section>
+<section id="レベル1.-推しの名前のアラートを表示させよう" class="level3">
+<h3>レベル1. 推しの名前のアラートを表示させよう！！</h3>
+<p>まずは何も考えずに“Console”の空白部分、“&gt;”が表示されている横に以下を入力してみてください。（★推し★の部分は自分の推しの名前にかえてね☆ただしダブルクォーテーション「&quot;」は必須！）</p>
+<pre><code>alert(&quot;★推し★&quot;);</code></pre>
+<p>入力できたら、Enterキーを押すとスクリプトが実行されます。 きっと画面上に推しの名前のアラートが表示されていることでしょう！</p>
+<p><code>alert();</code>はJavaScriptで、ブラウザに対して「アラートを表示しろ！」という命令文です。 <code>alert</code>が関数、<code>(&quot;★推し★&quot;)</code>が引数、<code>;</code>が命令の終りを表わしています。</p>
+<ul>
+<li>JavaScriptとは
+<ul>
+<li>Javaとついているけれど、JavaとJavaScriptは全く別物という罠。</li>
+<li>JavaScriptは「動的なWebサイトをつくるための言語」です。</li>
+<li>例えば、ボタンをクリックしたときにアラートが表示されたり、フォームに入力した内容をどこかに送信することができる、「何かのきっかけで、Webページ内でアクションが起こる」のが「動的なWebサイト」です。
+<ul>
+<li>我々が中高生のときに作ったようなWebサイトはおおむね「静的なWebサイト」といえるでしょう。</li>
+</ul></li>
+<li>ちなみにスクリプト（Script）というのは、「簡単なプログラム」くらいに解釈していればOK！</li>
+</ul></li>
+<li>関数とは
+<ul>
+<li>簡単に言うと、「○○と書いたらPCで××が起こるというお約束」みたいな感じ。</li>
+<li>上の例で行くと、<code>alert</code>関数を使えば、プログラマーが自分でアラートを呼び出すためにウィンドウを定義したり…という<del>面倒くさい</del>ことをせずに簡単にアラートウィンドウを呼び出せる代物！</li>
+</ul></li>
+<li>引数
+<ul>
+<li>関数を実行する際に必要になる値のことです。</li>
+<li>上の<code>alert</code>の例では、アラートのウィンドウ内に表示する文字列が「引数」になります。</li>
+<li>関数は必ずしも引数が必要というわけではなく、引数の必要がない関数もあります。</li>
+</ul></li>
+</ul>
+</section>
+<section id="レベル2.-推しの名前を変数にぶち込もう" class="level3">
+<h3>レベル2. 推しの名前を変数にぶち込もう！！！</h3>
+<p>まずはとにかく下の文字列をConsoleに打ち込んでみてくれよな！！一行入力するごとにEnterを押してくれよな！！！ (★のところは適宜置き換えてね！やっぱりダブルクォーテーション「&quot;」は必須！)</p>
+<pre><code>var myouji = &quot;★推しの名字&quot;;
+var namae = &quot;★推しの名前&quot;;
+alert(myouji+namae);</code></pre>
+<p>なんと驚くことに推しのフルネームがアラートに表示されるはずだぜ！！！</p>
+<ul>
+<li>変数とは
+<ul>
+<li>簡単に言うと、ある値を簡単に使いまわすために名前を付けるということ。</li>
+<li>たとえば、我々は会話の中で「推しが～～～」っていうけど、それは「推し」という名前の人物を指しているわけではなく、応援している若手俳優やアイドルの名前に置き換わるよね。つまりコード風に書くのならば<code>var 推し = &quot;大平峻也&quot;;</code>ということなのである！！</li>
+<li>ちなみに<code>var</code>というのは「今から変数宣言するから覚悟してくれよな！」という意思表示。この意思表示は言語によって違うので、他の言語も習得する場合は気を付けてね！</li>
+</ul></li>
+<li>ちなみに
+<ul>
+<li><code>myouji</code>と<code>namae</code>を結合するのに、<code>+</code>を使っていることにお気づき頂けただろうか…？</li>
+<li>プログラミングのなかでは、文字列の結合に<code>+</code>を用いることが多い（私の知っている範囲ではすべてそう）</li>
+<li>単純に<code>myoujinamae</code>と書いてしまうと、<code>myouji</code>と<code>namae</code>という変数ではなく<code>myoujinamae</code>という新しい変数として認識されてしまうのである！</li>
+<li>じゃあ間にスペースを入れて<code>myouji namae</code>にすれば良いのでは？と思われるかもしれない。プログラミングにおいて、スペースは区切りとして認識されてしまうため、スペースでは文字列の結合は行えないのであった…無情…。</li>
+</ul></li>
+</ul>
+</section>
+</section>
+</section>
+</body>
+</html>
